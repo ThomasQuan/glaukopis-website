@@ -222,7 +222,7 @@ const Home = (props) => {
               title="Educational Programs"
               desc="Our online course selection has been vetted and verified to provide you with the industry’s most renowned learning materials. Our up to date programs are actively implemented and will help to give you a leading edge in your field of interest."
               img={OnlineLearningIllustration}
-              btn={true}
+              btn={false}
               maxWidth={300}
               margin="0 auto 0 auto"
             />
@@ -230,7 +230,7 @@ const Home = (props) => {
               title="Job Opportunities"
               desc="Our in house bulletin boards are made to be the first stop on your employment pursuits. We offer links to job search engines, companies hiring around you, and business postings for both contract and internship availabilities."
               img={Forum}
-              btn={true}
+              btn={false}
               maxWidth={300}
               margin="0 auto 0 auto"
             />
@@ -238,7 +238,7 @@ const Home = (props) => {
               title="Community Hub"
               desc="Our community hub is a gateway for teachers, students, businesses, and individuals - All working, learning, and improving as one."
               img={Workshop}
-              btn={true}
+              btn={false}
               maxWidth={300}
               margin="0 auto 0 auto"
             />
@@ -246,7 +246,7 @@ const Home = (props) => {
               title="Hiring Workshop"
               desc="Job in mind? Strengthen your skills and ace your next job interview with ease!"
               img={JobSearch}
-              btn={true}
+              btn={false}
               maxWidth={300}
               margin="0 auto 0 auto"
             />
