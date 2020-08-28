@@ -29,8 +29,8 @@ const FAQ = (props) => {
 
   return (
     <div className={classes.root}>
-      <Typography variant="h3" gutterBottom align="center">
-        Frequently Asked Question
+      <Typography variant="h3" gutterBottom align="center" style={{color : '#d8b26e'}}>
+        Question for us
       </Typography>
       <Accordion>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>

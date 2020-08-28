@@ -114,7 +114,7 @@ const homeStyles = makeStyles((theme) => ({
     width: '40vw',
     height: "60vh",
     objectFit: "cover",
-    marginTop: "2rem",
+    marginTop: "auto",
     [theme.breakpoints.down("sm")]: {
       width: "100vw",
       height: "20vh",
@@ -133,12 +133,15 @@ const homeStyles = makeStyles((theme) => ({
 
     justifyContent: "center",
     color: "white",
-    padding: '3rem'
+  },
+  nextStepHeader: {
+    borderBottom: 'solid white 5px'
   },
   nextStepContent: {
     display: 'flex',
     flexDirection: 'column',
-    marginBottom: '5vh'
+    marginBottom: '5vh',
+    margin: "4vh auto 4vh auto"
 
 
   },
@@ -359,23 +362,64 @@ const Home = (props) => {
         </Box>
 
 
-        <Grid container className={classes.nextStep}>
-          <Grid item xs={12} md={4} className={classes.nextStepContent} style={{ margin: ' 0 auto 0 auto' }}>
-            <Typography variant="h3"> Ready to get started ?</Typography>
-            <Typography variant="h4" style={{ marginTop: "2rem" }}>
-              Head over to Glaukopis Wisdom and start your career search now.
-              Still have question about our service and how it work ? - We answered a few frequently asked question for you.
+        <Grid container spacing={2} className={classes.nextStep}>
+          <Grid className={classes.nextStepHeader} item xs={12} lg={12}> <Typography variant='h1' align='center'>How do I know Glaukopis Wisdom is for me? </Typography></Grid>
+          <Grid item xs={10} md={4} className={classes.nextStepContent} >
+            <Typography variant="h3" style={{ color: "#d8b26e" }}> Has COVID-19 impacted your career directly, have you lost your job,
+             lost your client base, or are unsure about your professional stability? </Typography>
+            <Typography variant="h4" style={{ marginTop: "2rem", }}>
+              If so, you are not alone, thousands of others are just as confused and concerned as you.
+              Thankfully Glaukopis Wisdom is here to help - start today and begin the journey to securing your
+              employment status by becoming the best candidate possible for the position of your choosing. Your new career - starts here!
             </Typography>
             <Grid item xs={12} className={classes.buttonContainer}>
               <Button className={classes.btnCont} variant="contained" color="secondary">
                 Start now
               </Button>
+
+            </Grid>
+          </Grid>
+
+
+
+          <Grid item xs={10} md={4} className={classes.nextStepContent} >
+            <Typography variant="h3" style={{ color: "#d8b26e" }}> Just received your degree, completed that course, and was all lined up to hit the job market running? </Typography>
+            <Typography variant="h4" style={{ marginTop: "2rem" }}>
+              So were we! But as well all know, suddenly it’s not the best time to be dropping off resumes.
+              That’s why we created an online job market for you. Make a profile, upload your credentials,
+              and start searching our Glaokopis Community hub now. Use our network and make Glaukopis Wisdom your next online job fair!
+            </Typography>
+            <Grid item xs={12} className={classes.buttonContainer}>
+              <Button className={classes.btnCont} variant="contained" color="secondary">
+                Start now
+              </Button>
+
+            </Grid>
+          </Grid>
+
+          <Grid item xs={10} md={5} className={classes.nextStepContent} >
+            <Typography variant="h3" style={{ color: "#d8b26e" }}>
+              Do you feel like you reached your goals at your current position?
+              Getting a bit tired of the “same old same old”. Been at the same job so long and just don’t know how to start over?
+            </Typography>
+            <Typography variant="h4" style={{ marginTop: "2rem" }}>
+              Then you are exactly where you need to be. Here at Glaukopis Wisdom we will help you target and achieve your new goals.
+              It is never too late to start learning! We will help you find what you are looking for,
+              what skills are needed to take you there, and map your ambitions into an actionable plan of success.
+              Take everything you have learned so far, and we’ll help you make it bigger and better than ever before!
+            </Typography>
+            <Grid item xs={12} className={classes.buttonContainer}>
+              <Button className={classes.btnCont} variant="contained" color="secondary">
+                Start now
+              </Button>
+              <Typography variant='h3' gutterBottom >or</Typography>
               <Button className={classes.btnCont} onClick={() => setParentDisplay(SERVICE)} variant="contained" color="primary" >
-                Explore services
+                Explore our services more
               </Button>
             </Grid>
           </Grid>
-          <Grid item xs={12} md={6} className={classes.nextStepContent} style={{ margin: ' 0 auto 0 auto' }}>
+
+          <Grid item xs={12} md={9} className={classes.nextStepContent} style={{ borderTop: "solid white 5px" }}>
             <FAQ />
           </Grid>
         </Grid>
