@@ -126,7 +126,7 @@ const Navigation = (props) => {
   return (
     <React.Fragment>
       <div className={classes.root}>
-        <AppBar position="static" className={classes.appBar}>
+        <AppBar position="fixed" className={classes.appBar} >
           <Toolbar>
             <IconButton
               aria-label="open drawer"
@@ -149,7 +149,7 @@ const Navigation = (props) => {
                   variant="h4"
                   style={{ color: "black", marginLeft: "2vw" }}
                 >
-                  Glaukopis Wisdome
+                  Glaukopis Wisdom
                 </Typography>
               </Grid>
               <Grid className={classes.navContent} item xs={9} sm={12} md={6}>

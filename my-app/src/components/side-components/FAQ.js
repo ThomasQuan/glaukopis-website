@@ -70,8 +70,7 @@ const FAQ = (props) => {
       <Accordion>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <Typography className={classes.heading}>
-            I am a recruiter, how may I contribute to Glaukopis to find more
-            promising candidate for my company or client?
+            I am a recruiter, how find more candidate for my business as Covid-19 has affect my staff shortage the most?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
@@ -82,7 +81,7 @@ const FAQ = (props) => {
             events, job posts, networking events that they are participating on
             our community hub, as our community hub will grow and be filled with
             passionate job seekers. Another features that recruiter can use to
-            search for potential employees, is by checking users "trophy shelve"
+            search for potential employees, is by viewing our users "trophy shelve"
             where users can use to showcase their certificates and achievements
             for all recruiters.
           </Typography>

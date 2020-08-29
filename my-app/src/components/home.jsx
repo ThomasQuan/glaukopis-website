@@ -110,12 +110,26 @@ const homeStyles = makeStyles((theme) => ({
     justifyContent: "space-between",
     marginTop: "2rem",
   },
+  comDetail: {
+    margin: "2rem 2vw 2rem 20vw", paddingLeft: "1rem",
+    height : 'auto',
+    [theme.breakpoints.down("md")]: {
+      margin: "0"
+    },
+  },
   communityImg: {
     width: '40vw',
     height: "60vh",
-    objectFit: "cover",
+    objectFit: "contain",
     marginTop: "auto",
+    
     [theme.breakpoints.down("sm")]: {
+      width: "50vw",
+      height: "auto",
+      objectFit: "cover",
+
+    },
+    [theme.breakpoints.down("xs")]: {
       width: "100vw",
       height: "20vh",
       objectFit: "cover",
@@ -172,6 +186,7 @@ const homeStyles = makeStyles((theme) => ({
     alignItems: 'center',
     margin: 'auto'
   },
+
 }));
 const Home = (props) => {
   const classes = homeStyles();
@@ -326,13 +341,14 @@ const Home = (props) => {
         </Grid>
 
         {/* Community Hub explain */}
-        <Box xs={12} display="flex" flexWrap="wrap">
+        <Grid container  >
           <Grid
             item
             xs={12}
-            lg={6}
+            lg={3}
+            sm={6}
             md={6}
-            style={{ margin: "2rem auto 2rem auto", paddingLeft: "1rem" }}
+            className={classes.comDetail}
           >
             <Typography variant="h3">
               A fully integrated suite of learning materials and job resources
@@ -348,22 +364,22 @@ const Home = (props) => {
               We also provide a <Link color='secondary'>community hub</Link> for users to join and
               share their thought to one of another.
             </Typography>
-            <Button variant="contained" color="primary">
+            <Button variant="contained" color="primary" style={{marginBottom : '2vh'}}>
               Explore now
             </Button>
           </Grid>
-          <Grid item xs={12} lg={5} md={5}>
+          <Grid item xs={12} sm={6} lg={6} md={5}  >
             <img
               className={classes.communityImg}
               src={CommunityHub}
               alt="united covid 19 unsplash"
             ></img>
           </Grid>
-        </Box>
+        </Grid>
 
 
         <Grid container spacing={2} className={classes.nextStep}>
-          <Grid className={classes.nextStepHeader} item xs={12} lg={12}> <Typography variant='h1' align='center'>How do I know Glaukopis Wisdom is for me? </Typography></Grid>
+          <Grid className={classes.nextStepHeader} item xs={12} lg={12}> <Typography variant='h1' align='center' style={{marginTop : '5vh', marginBottom : '5vh'}}>How do I know Glaukopis Wisdom is for me? </Typography></Grid>
           <Grid item xs={10} md={4} className={classes.nextStepContent} >
             <Typography variant="h3" style={{ color: "#d8b26e" }}> Has COVID-19 impacted your career directly, have you lost your job,
              lost your client base, or are unsure about your professional stability? </Typography>

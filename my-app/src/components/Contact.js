@@ -9,7 +9,7 @@ import { ReactComponent as ConfirmMessageIllustration } from "../assets/svg/undr
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    marginTop: "5vh",
+    marginTop: "12vh",
     marginBottom: "5vh",
     display: "flex",
     justifyContent: "space-around",

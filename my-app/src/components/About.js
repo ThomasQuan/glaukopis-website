@@ -8,7 +8,7 @@ import { Box, Grid, makeStyles, Typography } from "@material-ui/core";
 import DeveloperCard from "./side-components/developer-card";
 const AboutStyle = makeStyles((theme) => ({
   missionStatement: {
-    marginTop: "2vh",
+    marginTop: "10vh",
     marginBottom: "2vh",
     display: "flex",
 
