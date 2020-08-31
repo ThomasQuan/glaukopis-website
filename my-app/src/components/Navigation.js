@@ -126,7 +126,7 @@ const Navigation = (props) => {
   return (
     <React.Fragment>
       <div className={classes.root}>
-        <AppBar position="fixed" className={classes.appBar} >
+        <AppBar position="static" className={classes.appBar} >
           <Toolbar>
             <IconButton
               aria-label="open drawer"

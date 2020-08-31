@@ -1,5 +1,5 @@
 import React from "react";
-import ThanhQuan from "../assets/photo/ThanhQuan.JPG";
+import ThanhQuan from "../assets/photo/ThanhQuan.jpeg";
 import CarlaMedeiros from "../assets/photo/CarlaMedeiros.JPG";
 import Mission from "../assets/photo/mission.jpg";
 
@@ -52,20 +52,19 @@ const About = () => {
           lg={6}
           style={{ marginLeft: "2vw", marginRight: "2vw" }}
         >
-          <Typography variant="h3" component="h1" gutterBottom>
+          <Typography variant="h3" align="center" component="h1" gutterBottom>
             Our mission
           </Typography>
           <Typography variant="h4">
-            Glaukopis Wisdom is a community Software as a service, welcoming
+            Glaukopis Wisdom is a community Software as a Service, welcoming
             people from every discipline and culture who aim is to seek a better
             career path for themselves through education and knowledge. We
             believe that with our dedicated library of search engines and
-            community hub, we can help our customers achieve just that and more.
-            On Glaukopis Wisdom, we are building a headquarter of free knowledge
-            gather around the world - along with building a dedicated community
-            of curious individual who love to engage with ideas and each other
-            to improve themselves and other, both online and offline at events
-            that we searches.
+            community forum, we can help our customers achieve more. On
+            Glaukopis Wisdom, we are building a headquarter of free knowledges
+            gathered around the world - along with building a dedicated
+            community of curious individual who love to engage with ideas to
+            improve themselves and others, both online and offline.
           </Typography>
         </Grid>
       </Grid>

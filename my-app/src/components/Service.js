@@ -120,8 +120,8 @@ const Service = () => {
               One platform for a library of jobs and educations
             </Typography>
             <Typography align="center" variant="h4">
-              All feature has their purpose in helping you pursuit your next
-              career
+              All features have their own purpose in helping you pursue your
+              next career
             </Typography>
           </Grid>
         </Box>
@@ -146,7 +146,7 @@ const Service = () => {
 
         <Grid id="service-header" item xs={12} style={{ marginBottom: "2vh" }}>
           <Typography variant="h4" align="center" style={{ marginTop: "2rem" }}>
-            Glaukopis provided features
+            Glaukopis Provided Features
           </Typography>
           <Grid item xs={12} className={classes.generalFeatureList}>
             <CardFeature
@@ -204,16 +204,10 @@ const Service = () => {
           />
           <Grid item xs={10} md={4} lg={4} className={classes.Content}>
             <Typography style={{ marginBottom: "0.5rem" }} variant="h2">
-              Educational program
+              Educational Search
             </Typography>
 
             <Typography variant="h4">
-              Our online course selection has been vetted and verified to
-              provide you with the industry’s most renowned learning materials.
-              Our up to date programs are actively implemented and will help to
-              give you a leading edge in your field of interest. Utilize our
-              <br />
-              <br />
               Glaukopis Wisdom archive to find tailored resources to fit your
               personal needs – Whether it’s a new degree, a new profession, or a
               new mentor, our courses and upskilling selections are here for
@@ -221,7 +215,7 @@ const Service = () => {
             </Typography>
             <Grid item xs={12}>
               <Typography variant="h4" style={{ marginTop: "2rem" }}>
-                Search Engine Features
+                Features
               </Typography>
               <Grid container className={classes.contentFeatureList}>
                 <Carousel autoPlay={false}>
@@ -270,12 +264,6 @@ const Service = () => {
             </Typography>
 
             <Typography variant="h4">
-              Our in house bulletin boards are made to be the first stop on your
-              employment pursuits. We offer links to job search engines,
-              companies hiring around you, and business postings for both
-              contract and internship availabilities.
-              <br />
-              <br />
               Similar to traditional job searches, we also offer a precise range
               of options - more carefully related to your field.
             </Typography>
@@ -295,7 +283,7 @@ const Service = () => {
                   />
                   <CardFeature
                     title="Customize notification"
-                    desc="We provide notification about new job posts based on your own customization"
+                    desc="We provide real time notifications regarding updated job posts based on your own personal interests."
                     img={Bell}
                     btn={false}
                     maxWidth={500}
@@ -369,7 +357,7 @@ const Service = () => {
                   />
                   <CardFeature
                     title="Customize your interest"
-                    desc="Select from a category of interested, so we can match you with groups or peoples that have the same. "
+                    desc="Choose from our vast array of forum topics, in order for us to match you with groups or individuals that have similar interests. "
                     img={Filter}
                     btn={false}
                     maxWidth={500}
@@ -402,7 +390,7 @@ const Service = () => {
         <Grid id="pro-section" container className={classes.Container}>
           <Grid item xs={10} md={4} lg={4} className={classes.Content}>
             <Typography style={{ marginBottom: "0.5rem" }} variant="h2">
-              Professional Workshop
+              Hiring Workshop
             </Typography>
 
             <Typography variant="h4">
@@ -427,9 +415,9 @@ const Service = () => {
                   />
                   <CardFeature
                     title="Resume Assessment"
-                    desc="We provide link to resume assessment site which we believe are a good sources
+                    desc="We provide link to resume assessment sites which we believe are a good sources
                     for you to build the perfect eye catching resume - 
-                    ensuring higher success rate when job searching"
+                    ensuring higher success rates when job searching"
                     img={Forum}
                     btn={false}
                     maxWidth={500}

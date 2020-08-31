@@ -28,7 +28,6 @@ import Coursera from "../assets/photo/coursera-logo-black-transparent.png";
 import Indeed from "../assets/photo/indeed-logo.png";
 import Glassdoor from "../assets/photo/glassdoor-logo.png";
 import LinkedIn from "../assets/photo/linkedin.png";
-import FAQ from "./side-components/FAQ";
 
 const homeStyles = makeStyles((theme) => ({
   root: { flexGrow: 1 },
@@ -73,13 +72,13 @@ const homeStyles = makeStyles((theme) => ({
       SubwayLine +
       ")",
     width: "100vw",
-    height: "75vh",
+    height: "auto",
     backgroundRepeat: "repeat",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    margin: "0 auto auto auto",
+    margin: "5vh auto 5vh auto",
   },
   resourcesList: {
     display: "flex",
@@ -100,9 +99,9 @@ const homeStyles = makeStyles((theme) => ({
     justifyContent: "space-around",
     alignItems: "center",
     width: '60vw',
+    height: 'auto',
     [theme.breakpoints.down("md")]: {
       width: "100vw",
-      height: 'auto'
     },
   },
   CommunityHub: {
@@ -112,7 +111,7 @@ const homeStyles = makeStyles((theme) => ({
   },
   comDetail: {
     margin: "2rem 2vw 2rem 20vw", paddingLeft: "1rem",
-    height : 'auto',
+    height: 'auto',
     [theme.breakpoints.down("md")]: {
       margin: "0"
     },
@@ -122,7 +121,7 @@ const homeStyles = makeStyles((theme) => ({
     height: "60vh",
     objectFit: "contain",
     marginTop: "auto",
-    
+
     [theme.breakpoints.down("sm")]: {
       width: "50vw",
       height: "auto",
@@ -322,13 +321,7 @@ const Home = (props) => {
             <Typography variant="h4">
               + dozen more resources to come
             </Typography>
-            <Typography
-              align="center"
-              variant="h3"
-              style={{ fontWeight: "bold" }}
-            >
-              so that you don't
-            </Typography>
+
 
             <Button
               style={{ marginTop: "2rem", fontSize: "1.5rem" }}
@@ -352,19 +345,18 @@ const Home = (props) => {
           >
             <Typography variant="h3">
               A fully integrated suite of learning materials and job resources
-              from multiple platforms combind
+              from multiple platforms combinded
             </Typography>
             <Typography variant="h4" style={{ marginTop: "2rem" }}>
-              We bring together everything that’s require to land your next
-              job. From educational  resources to improve your skills, to job
-              search engine, or a professional workshop where you can
-              improve upon your interview and resume skills.
+              We bring together everything that’s required for you to land your next job.
+              From educational resources to improving your career skills, plus a job search engine,
+              as well as a professional hiring workshop.
             </Typography>
             <Typography variant="h4" style={{ margin: "2rem 0 2rem 0" }}>
-              We also provide a <Link color='secondary'>community hub</Link> for users to join and
-              share their thought to one of another.
+              We also provide a <Link color='secondary'>community hub</Link> for users to interact with, learn from,
+              and solve problems alongside industry professionals.
             </Typography>
-            <Button variant="contained" color="primary" style={{marginBottom : '2vh'}}>
+            <Button variant="contained" color="primary" style={{ marginBottom: '2vh' }}>
               Explore now
             </Button>
           </Grid>
@@ -379,7 +371,7 @@ const Home = (props) => {
 
 
         <Grid container spacing={2} className={classes.nextStep}>
-          <Grid className={classes.nextStepHeader} item xs={12} lg={12}> <Typography variant='h1' align='center' style={{marginTop : '5vh', marginBottom : '5vh'}}>How do I know Glaukopis Wisdom is for me? </Typography></Grid>
+          <Grid className={classes.nextStepHeader} item xs={12} lg={12}> <Typography variant='h1' align='center' style={{ marginTop: '5vh', marginBottom: '5vh' }}>How do I know Glaukopis Wisdom is for me? </Typography></Grid>
           <Grid item xs={10} md={4} className={classes.nextStepContent} >
             <Typography variant="h3" style={{ color: "#d8b26e" }}> Has COVID-19 impacted your career directly, have you lost your job,
              lost your client base, or are unsure about your professional stability? </Typography>
@@ -387,23 +379,6 @@ const Home = (props) => {
               If so, you are not alone, thousands of others are just as confused and concerned as you.
               Thankfully Glaukopis Wisdom is here to help - start today and begin the journey to securing your
               employment status by becoming the best candidate possible for the position of your choosing. Your new career - starts here!
-            </Typography>
-            <Grid item xs={12} className={classes.buttonContainer}>
-              <Button className={classes.btnCont} variant="contained" color="secondary">
-                Start now
-              </Button>
-
-            </Grid>
-          </Grid>
-
-
-
-          <Grid item xs={10} md={4} className={classes.nextStepContent} >
-            <Typography variant="h3" style={{ color: "#d8b26e" }}> Just received your degree, completed that course, and was all lined up to hit the job market running? </Typography>
-            <Typography variant="h4" style={{ marginTop: "2rem" }}>
-              So were we! But as well all know, suddenly it’s not the best time to be dropping off resumes.
-              That’s why we created an online job market for you. Make a profile, upload your credentials,
-              and start searching our Glaokopis Community hub now. Use our network and make Glaukopis Wisdom your next online job fair!
             </Typography>
             <Grid item xs={12} className={classes.buttonContainer}>
               <Button className={classes.btnCont} variant="contained" color="secondary">
@@ -428,16 +403,32 @@ const Home = (props) => {
               <Button className={classes.btnCont} variant="contained" color="secondary">
                 Start now
               </Button>
+
+            </Grid>
+          </Grid>
+
+
+          <Grid item xs={10} md={4} className={classes.nextStepContent} >
+            <Typography variant="h3" style={{ color: "#d8b26e" }}> Just received your degree, completed that course, and was all lined up to hit the job market running? </Typography>
+            <Typography variant="h4" style={{ marginTop: "2rem" }}>
+              So were we! But as well all know, suddenly it’s not the best time to be dropping off resumes.
+              That’s why we created an online job market for you. Make a profile, upload your credentials,
+              and start searching our Glaokopis Community hub now. Use our network and make Glaukopis Wisdom your next online job fair!
+            </Typography>
+            <Grid item xs={12} className={classes.buttonContainer}>
+              <Button className={classes.btnCont} variant="contained" color="secondary">
+                Start now
+              </Button>
               <Typography variant='h3' gutterBottom >or</Typography>
+
               <Button className={classes.btnCont} onClick={() => setParentDisplay(SERVICE)} variant="contained" color="primary" >
                 Explore our services more
               </Button>
             </Grid>
           </Grid>
 
-          <Grid item xs={12} md={9} className={classes.nextStepContent} style={{ borderTop: "solid white 5px" }}>
-            <FAQ />
-          </Grid>
+
+          
         </Grid>
 
 

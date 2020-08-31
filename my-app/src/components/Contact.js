@@ -118,8 +118,9 @@ const Contact = () => {
             Contact our team now
           </Typography>
           <Typography color="primary" variant="h4">
-            Our team is happy to answer your questions. Fill out the form and
-            we’ll be in touch as soon as possible.
+            Our team is ready to answer all of your questions. Please complete
+            the form below and one of our Wisdom Ambassadors will get back to
+            you as soon as possible.
           </Typography>
         </div>
 

@@ -89,7 +89,6 @@ const Footer = (props) => {
             </Grid>
             <Grid item xs={3}>
               <Typography
-                align="center"
                 variant="h4"
                 style={{ fontWeight: "bold" }}
               >
