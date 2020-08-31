@@ -177,7 +177,7 @@ const Service = () => {
               href="#com-section"
             />
             <CardFeature
-              title="Professional Workshop"
+              title="Hiring Workshop"
               desc="Job in mind? Strengthen your skills and ace your next job interview with ease!"
               img={JobSearch}
               btn={true}
