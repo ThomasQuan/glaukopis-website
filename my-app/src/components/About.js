@@ -56,15 +56,20 @@ const About = () => {
             Our mission
           </Typography>
           <Typography variant="h4">
-            Glaukopis Wisdom is a community Software as a Service, welcoming
-            people from every discipline and culture who aim is to seek a better
-            career path for themselves through education and knowledge. We
-            believe that with our dedicated library of search engines and
-            community forum, we can help our customers achieve more. On
-            Glaukopis Wisdom, we are building a headquarter of free knowledges
-            gathered around the world - along with building a dedicated
-            community of curious individual who love to engage with ideas to
-            improve themselves and others, both online and offline.
+            Glaukopis Wisdom is a professional learning community wherein driven
+            individuals enhance their learning abilities while learning from
+            actively involved industry thought leaders that are helping you to
+            master your own career. We believe that with our up to date as well
+            as first hand experiences from people who have been there and done
+            that, we will help our users achieve more. Glaukopis Wisdom is your
+            learning headquarters for coursework, professional prospects, career
+            readiness, and business related networking. We help our users find,
+            implement, and apply our proven practices so that they may be the
+            absolute best version of themselves. Whether you find your answers
+            in our Community Forum or from one of our Wisdom Ambassadors, we
+            have the keys for you to unlock your full potential. Never again
+            feel lost in the web based sea of information, when Glaukopis Wisdom
+            is here to offer you a life boat and a map!
           </Typography>
         </Grid>
       </Grid>
@@ -109,6 +114,13 @@ const About = () => {
               name={"Shaun Correia"}
               position={"Digital Marketer"}
               workExperiences={"None"}
+              desc={
+                "Utilizing my natural writing abilities while shifting my successful" +
+                " in person sales experience towards the flourishing online marketplace. I sincerely believe, going that extra mile when it comes to customer satisfaction, " +
+                " is as common a practice as the steps towards the coffee pot. My greatest teacher is my last mistake, my understanding is that good is the enemy of great," +
+                " and my best advertisements are my next clients. Wants nothing more than to work to the top, even if it means starting from the bottom. Thrives on repeat " +
+                "revenue alongside perpetual wisdom, seeking a mentor and/or company that is looking for an individual who is not just hungry for success, but working towards it."
+              }
               link={[
                 {
                   portfolio: "",
