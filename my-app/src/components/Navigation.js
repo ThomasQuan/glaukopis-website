@@ -20,6 +20,7 @@ import {
   ListItem,
   ListItemIcon,
 } from "@material-ui/core";
+import { useHistory } from "react-router-dom";
 
 import { HOME, ABOUT, CONTACT, SERVICE } from "../controller/nav-controller";
 
@@ -82,43 +83,36 @@ const Navigation = (props) => {
             <HomeIcon />
           </ListItemIcon>
 
-          <HeaderItem title="Home" actionFn={() => setParentDisplay(HOME)} />
+          <HeaderItem title="Home" actionFn={() => setLink(HOME)} />
         </ListItem>
         <ListItem button>
           <ListItemIcon>
             <InfoIcon />
           </ListItemIcon>
 
-          <HeaderItem
-            title="About Us"
-            actionFn={() => setParentDisplay(ABOUT)}
-          />
+          <HeaderItem title="About Us" actionFn={() => setLink(ABOUT)} />
         </ListItem>
         <ListItem button>
           <ListItemIcon>
             <GradeIcon />
           </ListItemIcon>
 
-          <HeaderItem
-            title="Service"
-            actionFn={() => setParentDisplay(SERVICE)}
-          />
+          <HeaderItem title="Service" actionFn={() => setLink(SERVICE)} />
         </ListItem>
         <ListItem button>
           <ListItemIcon>
             <ContactSupportIcon />
           </ListItemIcon>
 
-          <HeaderItem
-            title="Contact Us"
-            actionFn={() => setParentDisplay(CONTACT)}
-          />
+          <HeaderItem title="Contact Us" actionFn={() => setLink(CONTACT)} />
         </ListItem>
       </List>
     </div>
   );
-  const setParentDisplay = (value) => {
-    props.setDisplay(value);
+  const history = useHistory();
+
+  const setLink = (value) => {
+    history.push(`/${value}`);
   };
   const container =
     window !== undefined ? () => window().document.body : undefined;
@@ -126,7 +120,7 @@ const Navigation = (props) => {
   return (
     <React.Fragment>
       <div className={classes.root}>
-        <AppBar position="static" className={classes.appBar} >
+        <AppBar position="static" className={classes.appBar}>
           <Toolbar>
             <IconButton
               aria-label="open drawer"
@@ -154,21 +148,18 @@ const Navigation = (props) => {
               </Grid>
               <Grid className={classes.navContent} item xs={9} sm={12} md={6}>
                 <Box className={classes.rightHeaderMenu}>
-                  <HeaderItem
-                    title="Home"
-                    actionFn={() => setParentDisplay(HOME)}
-                  />
+                  <HeaderItem title="Home" actionFn={() => setLink(HOME)} />
                   <HeaderItem
                     title="About Us"
-                    actionFn={() => setParentDisplay(ABOUT)}
+                    actionFn={() => setLink(ABOUT)}
                   />
                   <HeaderItem
                     title="Service"
-                    actionFn={() => setParentDisplay(SERVICE)}
+                    actionFn={() => setLink(SERVICE)}
                   />
                   <HeaderItem
                     title="Contact Us"
-                    actionFn={() => setParentDisplay(CONTACT)}
+                    actionFn={() => setLink(CONTACT)}
                   />
                 </Box>
               </Grid>

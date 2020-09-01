@@ -9,8 +9,10 @@ import {
   Box,
   Link,
 } from "@material-ui/core";
-import { ABOUT, SERVICE } from "../controller/nav-controller";
-
+import {  SERVICE } from "../controller/nav-controller";
+import {
+  useHistory,
+} from "react-router-dom";
 import OnlineLearningIllustration from "../assets/photo/online-learning-illustration.png";
 import SubwayLine from "../assets/photo/subway-lines.png";
 import Chalkboard from "../assets/photo/chalkboard.jpg";
@@ -187,11 +189,14 @@ const homeStyles = makeStyles((theme) => ({
   },
 
 }));
+
 const Home = (props) => {
+  const history = useHistory();
   const classes = homeStyles();
-  const setParentDisplay = (value) => {
-    props.setDisplay(value);
+  const setLink = (value) => {
+    history.push(`/${value}`)
   };
+
   return (
     <>
       <div>
@@ -421,14 +426,14 @@ const Home = (props) => {
               </Button>
               <Typography variant='h3' gutterBottom >or</Typography>
 
-              <Button className={classes.btnCont} onClick={() => setParentDisplay(SERVICE)} variant="contained" color="primary" >
+              <Button className={classes.btnCont} onClick={() => setLink(SERVICE)} variant="contained" color="primary" >
                 Explore our services more
               </Button>
             </Grid>
           </Grid>
 
 
-          
+
         </Grid>
 
 

@@ -4,6 +4,9 @@ import { makeStyles, Grid, Typography, Box, Link } from "@material-ui/core";
 import { ReactComponent as Owl } from "../assets/svg/owl.svg";
 import Chalkboard from "../assets/photo/chalkboard.jpg";
 import { CONTACT } from "../controller/nav-controller";
+import {
+  useHistory,
+} from "react-router-dom";
 const footerStyle = makeStyles((theme) => ({
   root: {},
 
@@ -47,9 +50,10 @@ const footerStyle = makeStyles((theme) => ({
   },
 }));
 const Footer = (props) => {
+  const history = useHistory();
   const classes = footerStyle();
-  const setParentDisplay = (value) => {
-    props.setDisplay(value);
+  const setLink = (value) => {
+    history.push(`/${value}`)
   };
   return (
     <>
@@ -78,28 +82,22 @@ const Footer = (props) => {
                 Follow us
               </Typography>
               <Typography variant="h5">
-                <Link color='secondary'> Twitter </Link>
+                <Link color="secondary"> Twitter </Link>
               </Typography>
               <Typography variant="h5">
-                <Link color='secondary'> LinkedIn </Link>
+                <Link color="secondary"> LinkedIn </Link>
               </Typography>
               <Typography variant="h5">
-                <Link color='secondary'> Instagram </Link>
+                <Link color="secondary"> Instagram </Link>
               </Typography>
             </Grid>
             <Grid item xs={3}>
-              <Typography
-                variant="h4"
-                style={{ fontWeight: "bold" }}
-              >
+              <Typography variant="h4" style={{ fontWeight: "bold" }}>
                 Reach us
               </Typography>
               <Typography variant="h5">(647)-465-1767</Typography>
               <Typography variant="h5">
-                <Link
-                  color="secondary"
-                  onClick={() => setParentDisplay(CONTACT)}
-                >
+                <Link color="secondary" onClick={() => setLink(CONTACT)}>
                   or Contact us
                 </Link>
               </Typography>
