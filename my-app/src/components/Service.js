@@ -117,11 +117,12 @@ const Service = () => {
               variant="h3"
               style={{ margin: "2vh 0 2vh 0" }}
             >
-              One platform for a library of jobs and educations
+              Your Single Source For Education, Career Prospects, &amp;
+              Networking{" "}
             </Typography>
             <Typography align="center" variant="h4">
-              All features have their own purpose in helping you pursue your
-              next career
+              All features serve their own purpose in helping you to pursue your
+              next profession.
             </Typography>
           </Grid>
         </Box>
@@ -208,20 +209,17 @@ const Service = () => {
             </Typography>
 
             <Typography variant="h4">
-              Glaukopis Wisdom archive to find tailored resources to fit your
+              Glaukopis Wisdom archives specialized resources to fit your
               personal needs – Whether it’s a new degree, a new profession, or a
-              new mentor, our courses and upskilling selections are here for
+              new mentor, our courses and upskilling curriculum are here for
               you.
             </Typography>
             <Grid item xs={12}>
-              <Typography variant="h4" style={{ marginTop: "2rem" }}>
-                Features
-              </Typography>
               <Grid container className={classes.contentFeatureList}>
                 <Carousel autoPlay={false}>
                   <CardFeature
                     title="Filter your category "
-                    desc="Compare course options and filter through, duration of course, price of course, program certifications, and degree upon completion."
+                    desc="Choose your topic, explore your professional field and find out where your talents will take you next."
                     img={Filter}
                     btn={false}
                     maxWidth={500}
@@ -237,7 +235,7 @@ const Service = () => {
                   />
                   <CardFeature
                     title="General Review"
-                    desc="Our users and Gloaukopis Wisdom analysts give you real time feedback and expert opinions on their own experiences and what they have learned."
+                    desc="Our users and Glaukopis Wisdom analysts give you real time feedback and expert opinions on their own experiences in addition to what they have learned."
                     img={Review}
                     btn={false}
                     maxWidth={500}
@@ -251,7 +249,7 @@ const Service = () => {
               color="primary"
               variant="contained"
             >
-              Search our program now
+              Search our Programs Now
             </Button>
           </Grid>
         </Grid>
@@ -259,40 +257,32 @@ const Service = () => {
         {/* JOB SEARCH SECTION */}
         <Grid id="job-section" container className={classes.Container}>
           <Grid item xs={10} md={4} lg={4} className={classes.Content}>
-            <Typography style={{ marginBottom: "0.5rem" }} variant="h2">
-              Job Search Engine
-            </Typography>
-
             <Typography variant="h4">
               Similar to traditional job searches, we also offer a precise range
               of options - more carefully related to your field.
             </Typography>
             <Grid item xs={12}>
-              <Typography variant="h4" style={{ marginTop: "2rem" }}>
-                Search Engine Features
-              </Typography>
               <Grid container className={classes.contentFeatureList}>
                 <Carousel autoPlay={false}>
                   <CardFeature
-                    title="Highlighted section"
-                    desc="We automatically went through the job post - scan for important details and highlight them in each section for you to get a scope at what the recruiter want from an ideal candidate"
+                    title="Highlighted Section"
+                    desc="We examined high value job postings - scanned for important details - and showcased renowned career opportunities within our occupational classifieds."
                     img={Lightbuld}
                     btn={false}
                     maxWidth={500}
                     margin="0 2vw 0 0"
                   />
                   <CardFeature
-                    title="Customize notification"
-                    desc="We provide real time notifications regarding updated job posts based on your own personal interests."
+                    title="Customize Notifications"
+                    desc="We provide real time notifications regarding updated job posts based upon your own personal interests."
                     img={Bell}
                     btn={false}
                     maxWidth={500}
                     margin="0 2vw 0 0"
                   />
                   <CardFeature
-                    title="Customizable file upload"
-                    desc="Instead of writing and customizing your resume, cover letter, and answer -
-                     We offer users who are sign in to have a folder to store multiple resume and cover letter along with predefined answer for reusable purpose"
+                    title="Customizable File Upload"
+                    desc="Instead of writing and customizing your resume, cover letter, and interview related answer repeatedly - We offer users who are signed in access to a stored folder of multiple resume copies, cover letters, along with their own predetermined hiring responses for greater ease of use."
                     img={Folders}
                     btn={false}
                     maxWidth={500}
@@ -342,21 +332,20 @@ const Service = () => {
               and individuals - All working, learning, and improving as one.
             </Typography>
             <Grid item xs={12}>
-              <Typography variant="h4" style={{ marginTop: "2rem" }}>
-                Community Hub Features
-              </Typography>
               <Grid container className={classes.contentFeatureList}>
                 <Carousel autoPlay={false}>
                   <CardFeature
-                    title=" Groups that represent you "
-                    desc="Create your own group, or find one that represent you - start inviting members to share your knowledge, or help other in the group "
+                    title=" Groups That Represent You "
+                    desc="Create your own group, or find one that represent you - start inviting friends
+                     or members to share your current knowledge, past experiences,
+                      or be there to help other users in our public forum."
                     img={Group}
                     btn={false}
                     maxWidth={500}
                     margin="0 2vw 0 0"
                   />
                   <CardFeature
-                    title="Customize your interest"
+                    title="Customize Your Interest"
                     desc="Choose from our vast array of forum topics, in order for us to match you with groups or individuals that have similar interests. "
                     img={Filter}
                     btn={false}
@@ -365,7 +354,8 @@ const Service = () => {
                   />
                   <CardFeature
                     title="Event Hub"
-                    desc="We also have a dedicated section within the Community Hub call the Event Hub,
+                    desc="We also have a dedicated section within the Community Hub known as the
+                    Event Hub,
                     where you can select your location of interest for us to match any networking 
                     event or workshop near you to join remotely or on-site."
                     img={Networking}
@@ -404,10 +394,9 @@ const Service = () => {
               <Grid container className={classes.contentFeatureList}>
                 <Carousel autoPlay={false}>
                   <CardFeature
-                    title="Example Gallary"
-                    desc="Collection of resume, cover letter, along with 
-                    interview question and answer from around the internet for you to
-                    learn and experiment on."
+                    title="Example Gallery"
+                    desc="Collection of resume samples, cover letters, along with generalized interview questions and answers.
+                     All gathered from around the internet so that you may better prepare for and perfect your first impression."
                     img={Collecting}
                     btn={false}
                     maxWidth={500}
@@ -415,20 +404,18 @@ const Service = () => {
                   />
                   <CardFeature
                     title="Resume Assessment"
-                    desc="We provide link to resume assessment sites which we believe are a good sources
-                    for you to build the perfect eye catching resume - 
-                    ensuring higher success rates when job searching"
+                    desc="We provide links to resume assessment sites which we believe are a
+                     reputable source for you to build the perfect eye catching resume
+                      - ensuring the highest success rates when job searching."
                     img={Forum}
                     btn={false}
                     maxWidth={500}
                     margin="0 2vw 0 0"
                   />
                   <CardFeature
-                    title="Interview skill"
-                    desc="Either it's a general question about yourself or
-                     a practical question, we got you cover - We collect a wide range
-                     of material
-                     related to interview question to your convenience."
+                    title="Interview Skills"
+                    desc="Whether it's a general question about you or a practical question about your profession,
+                     we documented the most intelligent responses for each. Study our interview guidelines here."
                     img={Workshop}
                     btn={false}
                     maxWidth={500}

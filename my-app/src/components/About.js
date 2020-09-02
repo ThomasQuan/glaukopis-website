@@ -56,8 +56,8 @@ const About = () => {
             Our mission
           </Typography>
           <Typography variant="h4">
-            Glaukopis Wisdom is a professional learning community wherein driven
-            individuals enhance their learning abilities while learning from
+            Glaukopis Wisdom is a professional networking community wherein
+            driven individuals enhance their abilities while learning from
             actively involved industry thought leaders that are helping you to
             master your own career. We believe that with our up to date as well
             as first hand experiences from people who have been there and done
@@ -94,9 +94,10 @@ const About = () => {
               position={"Junior Software Developer"}
               workExperiences={"None"}
               desc={
-                "Graduated George Brown College student passionate about developing web application, bringing best user experiences " +
-                "and design along with implementing best coding practices. Experiences in developing Full Stack Application - looking " +
-                "for a position where I can express my skill and knowledge in hoping to sharpen my skill and contribute to the mission "
+                "Graduated George Brown College with completed Computer Programming Degree. Passionate about developing web applications, bringing the absolute " +
+                "best user experiences " +
+                "and design along with implementing vital coding practices. Proficient in developing Full Stack Applications, seeking " +
+                "a position where I can share my expertise and knowledge, all while perfecting and applying my skills so that I may contribute towards the mission. "
               }
               link={[
                 {
@@ -116,7 +117,7 @@ const About = () => {
               workExperiences={"None"}
               desc={
                 "Utilizing my natural writing abilities while shifting my successful" +
-                " in person sales experience towards the flourishing online marketplace. I sincerely believe, going that extra mile when it comes to customer satisfaction, " +
+                " in person sales experience towards the flourishing online marketplace. I sincerely believe, that going the extra mile when it comes to customer satisfaction, " +
                 " is as common a practice as the steps towards the coffee pot. My greatest teacher is my last mistake, my understanding is that good is the enemy of great," +
                 " and my best advertisements are my next clients. Wants nothing more than to work to the top, even if it means starting from the bottom. Thrives on repeat " +
                 "revenue alongside perpetual wisdom, seeking a mentor and/or company that is looking for an individual who is not just hungry for success, but working towards it."

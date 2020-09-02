@@ -324,7 +324,7 @@ const Home = (props) => {
               />
             </Box>
             <Typography variant="h4">
-              + dozen more resources to come
+              + dozens more resources to come
             </Typography>
 
 
@@ -350,7 +350,7 @@ const Home = (props) => {
           >
             <Typography variant="h3">
               A fully integrated suite of learning materials and job resources
-              from multiple platforms combinded
+              from multiple platforms combined
             </Typography>
             <Typography variant="h4" style={{ marginTop: "2rem" }}>
               We bring together everything that’s required for you to land your next job.
@@ -427,7 +427,7 @@ const Home = (props) => {
               <Typography variant='h3' gutterBottom >or</Typography>
 
               <Button className={classes.btnCont} onClick={() => setLink(SERVICE)} variant="contained" color="primary" >
-                Explore our services more
+                Explore our services further
               </Button>
             </Grid>
           </Grid>

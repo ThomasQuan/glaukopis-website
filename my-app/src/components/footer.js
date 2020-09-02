@@ -74,7 +74,7 @@ const Footer = (props) => {
                 Location
               </Typography>
               <Typography variant="h5">
-                169 Somewhere Street, Toronto, ON - CA
+                189 Somewhere Street, Toronto, ON - CA
               </Typography>
             </Grid>
             <Grid item xs={3}>
