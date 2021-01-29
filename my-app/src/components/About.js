@@ -53,7 +53,7 @@ const About = () => {
           style={{ marginLeft: "2vw", marginRight: "2vw" }}
         >
           <Typography variant="h3" align="center" component="h1" gutterBottom>
-            Our mission
+            OUR MISSION
           </Typography>
           <Typography variant="h4">
             Glaukopis Wisdom is a professional networking community wherein
@@ -80,13 +80,12 @@ const About = () => {
         alignItems="center"
         flexDirection="column"
         width={"100%"}
-        mt={6}
+        mt={10}
       >
-        <Typography variant="h3" gutterBottom>
-          {" "}
-          Meet our team{" "}
+        <Typography variant="h3" gutterBottom >
+          MEET OUR TEAM
         </Typography>
-        <Grid container spacing={2}>
+        <Grid container style={{marginTop: "10vh", marginBottom: "10vh"}}>
           <Grid item xs={12} sm={6} md={6} lg={3}>
             <DeveloperCard
               img={ThanhQuan}

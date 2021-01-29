@@ -9,17 +9,13 @@ import {
   Box,
   Link,
 } from "@material-ui/core";
-import {  SERVICE } from "../controller/nav-controller";
-import {
-  useHistory,
-} from "react-router-dom";
+import { SERVICE } from "../controller/nav-controller";
+import { useHistory } from "react-router-dom";
 import OnlineLearningIllustration from "../assets/photo/online-learning-illustration.png";
 import SubwayLine from "../assets/photo/subway-lines.png";
 import Chalkboard from "../assets/photo/chalkboard.jpg";
-
 import CommunityHub from "../assets/photo/united-nations-covid-19-response.jpg";
 import Forum from "../assets/photo/forum.png";
-
 import Workshop from "../assets/photo/workshop.png";
 import JobSearch from "../assets/photo/job-opportunities.png";
 import TextBook from "../assets/photo/textbook.png";
@@ -57,15 +53,14 @@ const homeStyles = makeStyles((theme) => ({
     flexWrap: "wrap",
   },
   imgBrand: {
-
     width: "3.5rem",
     height: "3.5rem",
-    objectFit: 'contain',
+    objectFit: "contain",
     margin: "auto",
     [theme.breakpoints.down("sm")]: {
       width: "2.5rem",
       height: "2.5rem",
-      margin: '0 2vw 0 2vw'
+      margin: "0 2vw 0 2vw",
     },
   },
   resourcesListContainer: {
@@ -93,15 +88,14 @@ const homeStyles = makeStyles((theme) => ({
     },
   },
   resourcesPaper: {
-
-    borderRadius: '5px',
+    borderRadius: "5px",
     backgroundColor: "#ffffffc4",
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-around",
     alignItems: "center",
-    width: '60vw',
-    height: 'auto',
+    width: "60vw",
+    height: "auto",
     [theme.breakpoints.down("md")]: {
       width: "100vw",
     },
@@ -112,14 +106,15 @@ const homeStyles = makeStyles((theme) => ({
     marginTop: "2rem",
   },
   comDetail: {
-    margin: "2rem 2vw 2rem 20vw", paddingLeft: "1rem",
-    height: 'auto',
+    margin: "2rem 2vw 2rem 20vw",
+    paddingLeft: "1rem",
+    height: "auto",
     [theme.breakpoints.down("md")]: {
-      margin: "0"
+      margin: "0",
     },
   },
   communityImg: {
-    width: '40vw',
+    width: "40vw",
     height: "60vh",
     objectFit: "contain",
     marginTop: "auto",
@@ -128,13 +123,11 @@ const homeStyles = makeStyles((theme) => ({
       width: "50vw",
       height: "auto",
       objectFit: "cover",
-
     },
     [theme.breakpoints.down("xs")]: {
       width: "100vw",
       height: "20vh",
       objectFit: "cover",
-
     },
   },
   nextStep: {
@@ -150,51 +143,51 @@ const homeStyles = makeStyles((theme) => ({
     color: "white",
   },
   nextStepHeader: {
-    borderBottom: 'solid white 5px'
+    borderBottom: "solid white 5px",
   },
   nextStepContent: {
-    display: 'flex',
-    flexDirection: 'column',
-    marginBottom: '5vh',
-    margin: "4vh auto 4vh auto"
-
-
+    display: "flex",
+    flexDirection: "column",
+    marginBottom: "5vh",
+    margin: "4vh 5vw 4vh 5vw",
   },
   buttonContainer: {
-    marginTop: '5vh',
-    display: 'flex',
-    flexWrap: 'wrap',
-    justifyContent: 'space-around'
-
+    marginTop: "5vh",
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "space-around",
   },
   btnCont: {
-    width: "100vw", height: '4rem',
+    width: "100vw",
+    height: "4rem",
+    fontSize: "1.25rem",
     [theme.breakpoints.down("sm")]: {
       width: "100vw",
+      fontSize: "1rem",
+
     },
   },
   footer: {
-    height: '50vh',
-    display: 'flex',
-    flexWrap: 'wrap',
-    justifyContent: 'space-around',
-    marginTop: '5rem'
+    height: "50vh",
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "space-around",
+    marginTop: "5rem",
   },
   logo: {
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-    margin: 'auto'
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    margin: "auto",
   },
-
 }));
 
 const Home = (props) => {
   const history = useHistory();
   const classes = homeStyles();
   const setLink = (value) => {
-    history.push(`/${value}`)
+    history.push(`/${value}`);
   };
 
   return (
@@ -215,15 +208,14 @@ const Home = (props) => {
           >
             <Typography variant="h1" align="center">
               Perfect your professional portfolio
-              </Typography>
+            </Typography>
             <Typography
               variant="h4"
               align="center"
-
               style={{ marginTop: "1rem", color: "#d4d4d4" }}
             >
-              Your curated library of learning materials, job postings, and dedicated networking communities - All within a single sources!
-
+              Your curated library of learning materials, job postings, and
+              dedicated networking communities - All within a single sources!
             </Typography>
             <Button
               style={{ marginTop: "2rem", fontSize: "1.5rem" }}
@@ -237,7 +229,7 @@ const Home = (props) => {
         {/* LIST FEATURE PROVIDED */}
         <Grid item xs={12}>
           <Typography variant="h4" align="center" style={{ marginTop: "2rem" }}>
-            Provided Features
+            PROVIDED FEATURES
           </Typography>
           <Grid item xs={12} className={classes.featureList}>
             <CardFeature
@@ -277,9 +269,15 @@ const Home = (props) => {
 
         {/* FLEX ON THE SEARCH ENGINEE */}
         <Grid item xs={12} md={12} className={classes.resourcesListContainer}>
-          <Box height='80%' className={classes.resourcesPaper}>
-            <Typography gutterBottom variant="h3" style={{ fontWeight: 'normal' }} align="center">
-              We search around the internet to find the best resources for you to improve upon your next career path.
+          <Box height="80%" className={classes.resourcesPaper}>
+            <Typography
+              gutterBottom
+              variant="h3"
+              style={{ fontWeight: "normal" }}
+              align="center"
+            >
+              We search around the internet to find the best resources for you
+              to improve upon your next career path.
             </Typography>
             <Box className={classes.resourcesList}>
               <img
@@ -327,11 +325,10 @@ const Home = (props) => {
               + dozens more resources to come
             </Typography>
 
-
             <Button
               style={{ marginTop: "2rem", fontSize: "1.5rem" }}
               variant="contained"
-              color='primary'
+              color="primary"
             >
               Start now
             </Button>
@@ -339,33 +336,32 @@ const Home = (props) => {
         </Grid>
 
         {/* Community Hub explain */}
-        <Grid container  >
-          <Grid
-            item
-            xs={12}
-            lg={3}
-            sm={6}
-            md={6}
-            className={classes.comDetail}
-          >
+        <Grid container>
+          <Grid item xs={12} lg={3} sm={6} md={6} className={classes.comDetail}>
             <Typography variant="h3">
               A fully integrated suite of learning materials and job resources
               from multiple platforms combined
             </Typography>
             <Typography variant="h4" style={{ marginTop: "2rem" }}>
-              We bring together everything that’s required for you to land your next job.
-              From educational resources to improving your career skills, plus a job search engine,
-              as well as a professional hiring workshop.
+              We bring together everything that’s required for you to land your
+              next job. From educational resources to improving your career
+              skills, plus a job search engine, as well as a professional hiring
+              workshop.
             </Typography>
             <Typography variant="h4" style={{ margin: "2rem 0 2rem 0" }}>
-              We also provide a <Link color='secondary'>community hub</Link> for users to interact with, learn from,
-              and solve problems alongside industry professionals.
+              We also provide a <Link color="secondary">community hub</Link> for
+              users to interact with, learn from, and solve problems alongside
+              industry professionals.
             </Typography>
-            <Button variant="contained" color="primary" style={{ marginBottom: '2vh' }}>
+            <Button
+              variant="contained"
+              color="primary"
+              style={{ marginBottom: "2vh" }}
+            >
               Explore now
             </Button>
           </Grid>
-          <Grid item xs={12} sm={6} lg={6} md={5}  >
+          <Grid item xs={12} sm={6} lg={6} md={5}>
             <img
               className={classes.communityImg}
               src={CommunityHub}
@@ -374,69 +370,87 @@ const Home = (props) => {
           </Grid>
         </Grid>
 
-
         <Grid container spacing={2} className={classes.nextStep}>
-          <Grid className={classes.nextStepHeader} item xs={12} lg={12}> <Typography variant='h1' align='center' style={{ marginTop: '5vh', marginBottom: '5vh' }}>How do I know Glaukopis Wisdom is for me? </Typography></Grid>
-          <Grid item xs={10} md={4} className={classes.nextStepContent} >
-            <Typography variant="h3" style={{ color: "#d8b26e" }}> Has COVID-19 impacted your career directly, have you lost your job,
-             lost your client base, or are unsure about your professional stability? </Typography>
-            <Typography variant="h4" style={{ marginTop: "2rem", }}>
-              If so, you are not alone, thousands of others are just as confused and concerned as you.
-              Thankfully Glaukopis Wisdom is here to help - start today and begin the journey to securing your
-              employment status by becoming the best candidate possible for the position of your choosing. Your new career - starts here!
+          <Grid className={classes.nextStepHeader} item xs={12} lg={12}>
+            {" "}
+            <Typography
+              variant="h2"
+              align="center"
+              style={{ marginTop: "5vh", marginBottom: "5vh" }}
+            >
+              How do I know Glaukopis Wisdom is for me?{" "}
             </Typography>
-            <Grid item xs={12} className={classes.buttonContainer}>
-              <Button className={classes.btnCont} variant="contained" color="secondary">
-                Start now
-              </Button>
-
-            </Grid>
+          </Grid>
+          <Grid item xs={10} md={4} className={classes.nextStepContent}>
+            <Typography variant="h4" style={{ color: "#d8b26e" }}>
+              {" "}
+              Has COVID-19 impacted your career directly, have you lost your
+              job, lost your client base, or are unsure about your professional
+              stability?{" "}
+            </Typography>
+            <Typography variant="h4" style={{ marginTop: "2rem" }}>
+              If so, you are not alone, thousands of others are just as confused
+              and concerned as you. Thankfully Glaukopis Wisdom is here to help
+              - start today and begin the journey to securing your employment
+              status by becoming the best candidate possible for the position of
+              your choosing. Your new career - starts here!
+            </Typography>
           </Grid>
 
-          <Grid item xs={10} md={5} className={classes.nextStepContent} >
-            <Typography variant="h3" style={{ color: "#d8b26e" }}>
+          <Grid item xs={10} md={5} className={classes.nextStepContent}>
+            <Typography variant="h4" style={{ color: "#d8b26e" }}>
               Do you feel like you reached your goals at your current position?
-              Getting a bit tired of the “same old same old”. Been at the same job so long and just don’t know how to start over?
+              Getting a bit tired of the “same old same old”. Been at the same
+              job so long and just don’t know how to start over?
             </Typography>
             <Typography variant="h4" style={{ marginTop: "2rem" }}>
-              Then you are exactly where you need to be. Here at Glaukopis Wisdom we will help you target and achieve your new goals.
-              It is never too late to start learning! We will help you find what you are looking for,
-              what skills are needed to take you there, and map your ambitions into an actionable plan of success.
-              Take everything you have learned so far, and we’ll help you make it bigger and better than ever before!
+              Then you are exactly where you need to be. Here at Glaukopis
+              Wisdom we will help you target and achieve your new goals. It is
+              never too late to start learning! We will help you find what you
+              are looking for, what skills are needed to take you there, and map
+              your ambitions into an actionable plan of success. Take everything
+              you have learned so far, and we’ll help you make it bigger and
+              better than ever before!
             </Typography>
-            <Grid item xs={12} className={classes.buttonContainer}>
-              <Button className={classes.btnCont} variant="contained" color="secondary">
-                Start now
-              </Button>
-
-            </Grid>
           </Grid>
 
-
-          <Grid item xs={10} md={4} className={classes.nextStepContent} >
-            <Typography variant="h3" style={{ color: "#d8b26e" }}> Just received your degree, completed that course, and was all lined up to hit the job market running? </Typography>
+          <Grid item xs={10} md={4} className={classes.nextStepContent}>
+            <Typography variant="h4" style={{ color: "#d8b26e" }}>
+              {" "}
+              Just received your degree, completed that course, and was all
+              lined up to hit the job market running?{" "}
+            </Typography>
             <Typography variant="h4" style={{ marginTop: "2rem" }}>
-              So were we! But as well all know, suddenly it’s not the best time to be dropping off resumes.
-              That’s why we created an online job market for you. Make a profile, upload your credentials,
-              and start searching our Glaokopis Community hub now. Use our network and make Glaukopis Wisdom your next online job fair!
+              So were we! But as well all know, suddenly it’s not the best time
+              to be dropping off resumes. That’s why we created an online job
+              market for you. Make a profile, upload your credentials, and start
+              searching our Glaokopis Community hub now. Use our network and
+              make Glaukopis Wisdom your next online job fair!
             </Typography>
             <Grid item xs={12} className={classes.buttonContainer}>
-              <Button className={classes.btnCont} variant="contained" color="secondary">
+              <Button
+                className={classes.btnCont}
+                variant="contained"
+                color="secondary"
+  
+              >
                 Start now
               </Button>
-              <Typography variant='h3' gutterBottom >or</Typography>
+              <Typography variant="h3" gutterBottom>
+                or
+              </Typography>
 
-              <Button className={classes.btnCont} onClick={() => setLink(SERVICE)} variant="contained" color="primary" >
+              <Button
+                className={classes.btnCont}
+                onClick={() => setLink(SERVICE)}
+                variant="contained"
+                color="primary"
+              >
                 Explore our services further
               </Button>
             </Grid>
           </Grid>
-
-
-
         </Grid>
-
-
       </div>
     </>
   );
